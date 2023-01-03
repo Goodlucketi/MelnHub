@@ -1,32 +1,54 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <div class="nav-content">
+        <div class="logo">
+          <h3 class="logo-text">MELN</h3>
+        </div>
+        <div class="link">
+          <router-link to="/">Home</router-link>
+          <router-link to="/about">About</router-link>
+          <router-link to="/training">Training</router-link>
+        </div>
+      </div>
     </nav>
     <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  margin: 0;
+  padding: 0;
 }
-
 nav {
-  padding: 30px;
+  background: rgb(12, 2, 2);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
+.nav-content {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
 nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  padding: 20px;
+  text-decoration: none;
+  font-size: larger;
+  color: #fff;
+}
+.logo-text {
+  color: #fff;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+@media screen and (max-width: 500px) {
+  .link {
+    display: none;
+  }
 }
 </style>
