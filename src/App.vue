@@ -3,7 +3,7 @@
     <nav>
       <div class="nav-content">
         <div class="logo">
-          <h3 class="logo-text">MELN</h3>
+          <router-link to="/"><h3 class="logo-text">MELN</h3></router-link>
         </div>
         <div class="link">
           <router-link to="/">Home</router-link>
