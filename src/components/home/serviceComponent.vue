@@ -30,18 +30,18 @@
         <div class="service">
           <font-awesome-icon
             class="icon"
-            icon="fa-solid fa-graduation-cap"
-            size="4x"
-          />
-          <h3>Training</h3>
-        </div>
-        <div class="service">
-          <font-awesome-icon
-            class="icon"
             icon="fa-solid fa-paint-brush"
             size="4x"
           />
           <h3>UI/UX Design</h3>
+        </div>
+        <div class="service">
+          <font-awesome-icon
+            class="icon"
+            icon="fa-solid fa-graduation-cap"
+            size="4x"
+          />
+          <h3>Training</h3>
         </div>
       </div>
     </div>
