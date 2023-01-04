@@ -10,6 +10,9 @@
           <router-link to="/about">About</router-link>
           <router-link to="/training">Training</router-link>
         </div>
+        <div class="menu-icon">
+          <font-awesome-icon class="icon" icon="fa-solid fa-bars" size="lg" />
+        </div>
       </div>
     </nav>
     <router-view />
@@ -20,6 +23,9 @@
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  scroll-behavior: smooth;
 }
 nav {
   background: rgb(12, 2, 2);
@@ -45,10 +51,17 @@ nav a {
 .logo-text {
   color: #fff;
 }
+.menu-icon {
+  color: #fff;
+  display: none;
+}
 
 @media screen and (max-width: 500px) {
   .link {
     display: none;
+  }
+  .menu-icon {
+    display: block;
   }
 }
 </style>
