@@ -91,5 +91,10 @@ export default {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
+
+  .service h3 {
+    color: #0c0c0c;
+    font-size: large;
+  }
 }
 </style>
