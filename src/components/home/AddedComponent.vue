@@ -13,7 +13,7 @@
         </ul>
       </div>
       <div class="adImage">
-        <img src="../../assets/background (1).jpg" alt="Learn Web Image" />
+        <img src="../../assets/background (3).jpg" alt="Learn Web Image" />
       </div>
     </div>
   </div>
@@ -75,6 +75,7 @@ export default {
   }
   .adContainer > div {
     width: 80%;
+    margin: 15px auto;
   }
   .adText h2 {
     font-size: 1.8rem;
