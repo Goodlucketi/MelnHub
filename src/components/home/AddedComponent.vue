@@ -2,6 +2,8 @@
   <div class="ad">
     <div class="adContainer">
       <div class="adText">
+        <h2>Build Responsive Web Design</h2>
+        <br />
         <h2>Get Trained in Web Development</h2>
         <ul>
           <li>HTML</li>
