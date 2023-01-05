@@ -80,11 +80,11 @@ export default {
   justify-content: space-between;
 }
 .service h3 {
-  color: #0c0c0c;
+  color: #01091d;
   font-size: x-large;
 }
 .icon {
-  color: #0a3c35;
+  color: #03001e;
 }
 @media screen and (max-width: 500px) {
   .service-items {

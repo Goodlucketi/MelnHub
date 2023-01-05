@@ -20,7 +20,7 @@ export default {
 
 <style>
 .hero {
-  background: url("../../assets/background\ \(2\).jpg");
+  background: url("../../assets/herobackground.png");
   height: 70vh;
 }
 .about-container {

@@ -2,20 +2,12 @@
   <div class="ad">
     <div class="adContainer">
       <div class="adText">
-        <h2>Build Responsive Web Design</h2>
+        <h2>Become a Professional Graphics Designer</h2>
         <br />
-        <h2>Get Trained in Web Development</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>Javascript</li>
-          <li>PHP</li>
-          <li>Node</li>
-        </ul>
+        <h2>Create designs with Photoshop, Illustrator and Figma</h2>
       </div>
       <div class="adImage">
-        <img src="../../assets/background (3).jpg" alt="Learn Web Image" />
+        <img src="../../assets/4738060.jpg" alt="Learn Web Image" />
       </div>
     </div>
   </div>
@@ -23,14 +15,13 @@
 
 <script>
 export default {
-  name: "AddedComponent",
+  name: "AddedComponent2",
 };
 </script>
 
 <style scoped>
 .ad {
-  background: rgb(0, 4, 25);
-  color: #fff;
+  color: rgb(3, 1, 27);
   padding: 2rem 0;
 }
 
@@ -38,15 +29,16 @@ export default {
   width: 80%;
   margin: 2rem auto;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
 }
 
 .adContainer > div {
-  width: 50%;
+  width: 45%;
 }
 .adText h2 {
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 .adText ul {
   display: flex;
@@ -67,8 +59,7 @@ export default {
 
 @media screen and (max-width: 500px) {
   .ad {
-    background: rgb(0, 4, 25);
-    color: #fff;
+    color: rgb(2, 0, 26);
     padding: 10px;
   }
   .adContainer {
@@ -80,7 +71,7 @@ export default {
     margin: 15px auto;
   }
   .adText h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .adText li {
     font-size: 1.2rem;

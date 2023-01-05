@@ -22,7 +22,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .hero {
-  background: url("../../assets/background\ \(3\).jpg") no-repeat;
+  background: url("../../assets/herobackground.png") no-repeat;
   background-size: cover;
   height: 95vh;
 }
