@@ -21,6 +21,7 @@ export default {
 <style>
 .hero {
   background: url("../../assets/herobackground.png");
+  background-size: cover;
   height: 70vh;
 }
 .about-container {

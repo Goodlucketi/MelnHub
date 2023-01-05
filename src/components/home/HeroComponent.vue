@@ -38,15 +38,23 @@ h3 {
   color: #f5f5f5;
   position: absolute;
   top: 40%;
-  font-size: large;
+  font-size: x-large;
   width: 40%;
 }
 @media screen and (max-width: 500px) {
+  .hero {
+    background-position: right;
+    height: 95vh;
+  }
   h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
   }
   .hero-txt {
-    top: 30%;
+    width: 75%;
+    line-height: 30px;
+    top: 40%;
+    font-size: large;
   }
 }
 </style>
