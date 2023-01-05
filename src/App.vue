@@ -29,7 +29,7 @@ body {
 }
 nav {
   background: rgb(12, 2, 2);
-  padding: 10px;
+  padding: 5px;
   position: sticky;
   top: 0;
   left: 0;
@@ -38,9 +38,10 @@ nav {
 
 .nav-content {
   width: 80%;
-  margin: 10px auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 nav a {
   padding: 20px;
