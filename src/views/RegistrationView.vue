@@ -2,7 +2,7 @@
   <div class="about">
     <div class="aboutcontainer">
       <AboutHero />
-      <serviceComponent />
+      <RegistrationForm />
       <FooterComponent />
     </div>
   </div>
@@ -10,16 +10,16 @@
 
 <script>
 import AboutHero from "@/components/about/HeroComponent.vue";
-import serviceComponent from "@/components/home/serviceComponent.vue";
+import RegistrationForm from "@/components/register/RegistrationForm.vue";
 import FooterComponent from "@/components/home/FooterComponent.vue";
 export default {
-  name: "TrainingView",
+  name: "RegistrationView",
   data: () => ({
     title: "Trainings",
   }),
   components: {
     AboutHero,
-    serviceComponent,
+    RegistrationForm,
     FooterComponent,
   },
 };

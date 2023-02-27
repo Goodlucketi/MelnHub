@@ -1,17 +1,17 @@
 <template>
   <div class="services">
     <div class="serviceContainer">
-      <h3>Our Services</h3>
+      <h3>{{ title }}</h3>
       <div class="service-items">
         <div class="service">
           <font-awesome-icon class="icon" icon="fa-solid fa-code" size="4x" />
           <h3>Web Development</h3>
-          <a class="action" href="#">Get Started</a>
+          <router-link to="/register" class="action">Get Started</router-link>
         </div>
         <div class="service">
           <font-awesome-icon class="icon" icon="fa-solid fa-pencil" size="4x" />
           <h3>Graphic Design</h3>
-          <a class="action" href="#">Get Started</a>
+          <router-link to="/register" class="action">Get Started</router-link>
         </div>
         <div class="service">
           <font-awesome-icon
@@ -20,7 +20,7 @@
             size="4x"
           />
           <h3>Data Analysis</h3>
-          <a class="action" href="#">Get Started</a>
+          <router-link to="/register" class="action">Get Started</router-link>
         </div>
         <div class="service">
           <font-awesome-icon
@@ -29,7 +29,7 @@
             size="4x"
           />
           <h3>Project Management</h3>
-          <a class="action" href="#">Get Started</a>
+          <router-link to="/register" class="action">Get Started</router-link>
         </div>
         <div class="service">
           <font-awesome-icon
@@ -38,7 +38,7 @@
             size="4x"
           />
           <h3>UI/UX Design</h3>
-          <a class="action" href="#">Get Started</a>
+          <router-link to="/register" class="action">Get Started</router-link>
         </div>
         <div class="service">
           <font-awesome-icon
@@ -47,7 +47,7 @@
             size="4x"
           />
           <h3>Training</h3>
-          <a class="action" href="#">Get Started</a>
+          <router-link to="/register" class="action">Get Started</router-link>
         </div>
       </div>
     </div>
@@ -57,6 +57,12 @@
 <script>
 export default {
   name: "serviceComponent",
+  data: () => ({
+    title: "Services",
+  }),
+  // props: {
+  //   head: Training,
+  // },
 };
 </script>
 
