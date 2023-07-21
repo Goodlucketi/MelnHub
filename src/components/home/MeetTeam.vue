@@ -76,9 +76,7 @@
                 <h3 class="member-id">Ephraim Morgan</h3>
                 <p class="member-role">CMO</p>
                 <div class="underline"></div>
-                <p class="member-description">
-                    Mfonobong Emayak is the Co-Founder/Chief Technology Officer of Meln Hub, He is a Brand Designer/Product Designer with 5+ years of experience in the creative industry.
-                </p>
+                <p class="member-description">lorem Ipsum</p>
                 <div class="member-social">
                     <font-awesome-icon class="icon" icon="fa-brands fa-facebook"/>
                     <font-awesome-icon class="icon" icon="fa-brands fa-linkedin"/>
