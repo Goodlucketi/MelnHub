@@ -4,51 +4,59 @@
       <h3>{{ title }}</h3>
       <div class="service-items">
         <div class="service">
-          <font-awesome-icon class="icon" icon="fa-solid fa-code" size="4x" />
-          <h3>Web Development</h3>
-          <router-link to="/register" class="action">Get Started</router-link>
+          <img src="../../assets/icons/Code.png" class="service-icon" alt="">
+          <h3 class="service-title">Software Development</h3>
+          <p class="service-content">
+            We develop robust, scalable, and customized software solutions that align with your business objectives. From web and mobile applications to enterprise software, we have you covered.
+          </p>
+          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
+
         <div class="service">
-          <font-awesome-icon class="icon" icon="fa-solid fa-pencil" size="4x" />
-          <h3>Graphic Design</h3>
-          <router-link to="/register" class="action">Get Started</router-link>
+          <img src="../../assets/icons/icons8-one-way-transition-50 1.png" class="service-icon" alt="">
+          <h3 class="service-title">Digital Transformation</h3>
+          <p class="service-content">
+            Embrace the digital age with our transformative solutions. We help businesses streamline processes, enhance customer experiences, and unlock new growth opportunities through digitalization.
+          </p>
+          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
+
         <div class="service">
-          <font-awesome-icon
-            class="icon"
-            icon="fa-solid fa-bar-chart"
-            size="4x"
-          />
-          <h3>Data Analysis</h3>
-          <router-link to="/register" class="action">Get Started</router-link>
+          <img src="../../assets/icons/icons8-meeting-50 1.png" class="service-icon" alt="">
+          <h3 class="service-title">IT Consulting</h3>
+          <p class="service-content">
+            Our experienced consultants provide strategic guidance, technology assessments, and roadmap development to help you navigate the complex IT landscape and make informed technology decisions.
+          </p>
+          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
+
         <div class="service">
-          <font-awesome-icon
-            class="icon"
-            icon="fa-solid fa-line-chart"
-            size="4x"
-          />
-          <h3>Project Management</h3>
-          <router-link to="/register" class="action">Get Started</router-link>
+          <img src="../../assets/icons/icons8-meeting-50 1.png" class="service-icon" alt="">
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-content">
+            We develop robust, scalable, and customized software solutions that align with your business objectives. From web and mobile applications to enterprise software, we have you covered.
+          </p>
+          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
+
         <div class="service">
-          <font-awesome-icon
-            class="icon"
-            icon="fa-solid fa-paint-brush"
-            size="4x"
-          />
-          <h3>UI/UX Design</h3>
-          <router-link to="/register" class="action">Get Started</router-link>
+          <img src="../../assets/icons/icons8-product-management-68 1.png" class="service-icon" alt="">
+          <h3 class="service-title">Product Management</h3>
+          <p class="service-content">
+            Embrace the digital age with our transformative solutions. We help businesses streamline processes, enhance customer experiences, and unlock new growth opportunities through digitalization.
+          </p>
+          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
+
         <div class="service">
-          <font-awesome-icon
-            class="icon"
-            icon="fa-solid fa-graduation-cap"
-            size="4x"
-          />
-          <h3>Training</h3>
-          <router-link to="/register" class="action">Get Started</router-link>
+          <img src="../../assets/icons/icons8-branding-48 1.png" class="service-icon" alt="">
+          <h3 class="service-title">Branding</h3>
+          <p class="service-content">
+            Our experienced consultants provide strategic guidance, technology assessments, and roadmap development to help you navigate the complex IT landscape and make informed technology decisions.
+          </p>
+          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
+        
       </div>
     </div>
   </div>
@@ -58,7 +66,7 @@
 export default {
   name: "serviceComponent",
   data: () => ({
-    title: "Services",
+    title: "Discover our Services",
   }),
   // props: {
   //   head: Training,
@@ -67,14 +75,21 @@ export default {
 </script>
 
 <style scoped>
+.services{
+  background: url("../../assets/images/Element.png") no-repeat;
+  background-position: 0 20rem;
+  background-size: contain;
+}
 .serviceContainer {
-  width: 80%;
-  margin: 4rem auto;
+  width: 90%;
+  margin:auto auto;
 }
 .serviceContainer > h3 {
-  font-size: x-large;
+  font-size: 2.5rem;
   text-align: center;
   padding: 1rem;
+  font-weight: 700;
+  margin:30px;
 }
 .service-items {
   display: grid;
@@ -82,49 +97,86 @@ export default {
   grid-gap: 3rem;
 }
 .service {
-  text-align: center;
-  box-shadow: 0 0px 15px 1px rgb(210, 196, 196);
+  box-shadow: 0 0px 30px 1px rgb(238, 234, 234), 0 0 30px 1px rgb(239, 232, 232);
   padding: 1rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: #fff; 
 }
 .service:hover {
   transform: scale(1.05);
   transition: all 0.5s;
 }
-.service h3 {
+.service-title {
   color: #01091d;
-  font-size: larger;
-  margin: 10px;
+  font-size: x-large;
+  font-weight: 800;
+  margin:10px 0;
+}
+.service-content{
+  line-height: 30px;
+  font-size: medium;
+}
+.service-icon{
+  width: 20%;
 }
 .icon {
   color: #03001e;
+  
 }
 .action {
-  padding: 15px;
-  margin: 15px auto;
-  border-radius: 10px;
-  background: #03001e;
-  color: #fff;
-  text-decoration: none;
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #03001e;
 }
 .action:hover {
-  color: #03001e;
   background: #fff;
   border: 1px inset #03001e;
   transition: all 0.5s;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
+  .serviceContainer> h3 {
+    font-size: 2rem;
+  }
   .service-items {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
 
-  .service h3 {
+  .service-title {
     color: #0c0c0c;
-    font-size: large;
+    font-size: 2rem;
+  }
+  .service-content{
+    font-size: 1.2rem;
+  }
+  .service-icon{
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .serviceContainer > h3 {
+    font-size: 1.2rem;
+  }
+  .service-items {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .service-title {
+    color: #0c0c0c;
+    font-size: 1.2rem;
+  }
+  .service-icon{
+    width: 20%;
+  }
+  .service-content{
+    font-size: 0.8rem;
   }
 }
 </style>

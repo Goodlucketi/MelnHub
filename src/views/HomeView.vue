@@ -1,32 +1,39 @@
 <template>
   <div class="home">
     <HeroComponent />
+    <AboutHome />
     <serviceComponent />
-    <AddedComponent />
-    <AddedComponent2 />
-    <AboutComponent />
-    <FooterComponent />
+    <AdComponent />
+    <MeetTeam />
+    <Blog />
+    <ContactForm />
+    <Footer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HeroComponent from "@/components/home/HeroComponent.vue";
-import serviceComponent from "@/components/home/serviceComponent.vue";
-import AddedComponent from "@/components/home/AddedComponent.vue";
-import AddedComponent2 from "@/components/home/AddedComponent2.vue";
-import AboutComponent from "@/components/home/AboutComponent.vue";
-import FooterComponent from "@/components/home/FooterComponent.vue";
+import AboutHome from "@/components/home/AboutHome.vue";
+import serviceComponent from "@/components/home/serviceComponent.vue"
+import AdComponent from "@/components/home/AdComponent.vue"
+import MeetTeam from "@/components/home/MeetTeam.vue"
+import Blog from "@/components/home/BlogComponent.vue"
+import ContactForm from "@/components/home/ContactUs.vue"
+import Footer from '@/components/home/FooterComponent.vue';
 
 export default {
   name: "HomeView",
   components: {
     HeroComponent,
+    AboutHome,
     serviceComponent,
-    AddedComponent,
-    AddedComponent2,
-    AboutComponent,
-    FooterComponent,
+    AdComponent,
+    MeetTeam,
+    Blog,
+    ContactForm,
+    Footer
+    
   },
 };
 </script>

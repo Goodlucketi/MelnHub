@@ -21,7 +21,12 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 /* add icons to the library */
 library.add(
   faCode,
@@ -34,7 +39,13 @@ library.add(
   faTwitter,
   faFacebook,
   faInstagram,
-  faYoutube
+  faYoutube,
+  faWhatsapp,
+  faLinkedin,
+  faArrowRight,
+  faEnvelope,
+  faLocationDot,
+  faPhone
 );
 
 /* add font awesome icon component */

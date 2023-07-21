@@ -1,36 +1,44 @@
 <template>
   <div class="footer">
     <div class="footerContainer">
-      <div class="links">
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Service</li></a>
-        <a href="#"><li>Training</li></a>
-        <a href="#"><li>Blog</li></a>
+      <div class="logo">
+        <img src="../../assets/images/Logo_Primary_white.png" alt="Company Logo" width="90%">
       </div>
-      <div class="social-media">
-        <a href="#">
-          <font-awesome-icon
-            class="icon"
-            icon="fa-brands fa-facebook"
-            size="2x"
-        /></a>
-        <a href="#">
-          <font-awesome-icon class="icon" icon="fa-brands fa-youtube" size="2x"
-        /></a>
-        <a href="#">
-          <font-awesome-icon
-            class="icon"
-            icon="fa-brands fa-instagram"
-            size="2x"
-        /></a>
-        <a href="#">
-          <font-awesome-icon class="icon" icon="fa-brands fa-twitter" size="2x"
-        /></a>
+      <div class="company-info">
+        <div class="platforms">
+          <p><span><font-awesome-icon class="foot-social-icon" icon="fa-solid fa-envelope"/></span> melnhub203@gmail.com</p>
+          <p><font-awesome-icon class="foot-social-icon" icon="fa-solid fa-location-dot"/> #55 Uyo Road, Beside Geneto Hotel, Nung Udoe, Ibesikpo</p>
+          <p><font-awesome-icon class="foot-social-icon" icon="fa-solid fa-phone"/> +234 9066600060, +234 8060867256</p>
+        </div>
+        <div class="links">
+          <div class="company">
+            <h4>COMPANY</h4>
+            <p><router-link to="" class="footer-link">About Us</router-link></p>
+            <p><router-link to="" class="footer-link">Our Vision</router-link></p>
+            <p><router-link to="" class="footer-link">Our Mission</router-link></p>
+            <p><router-link to="" class="footer-link">Our Projects</router-link></p>
+            <p><router-link to="" class="footer-link">Our Team</router-link></p>
+          </div>
+          <div class="quick-links">
+            <h4>QUICK LINKS</h4>
+            <p><router-link to="" class="footer-link">Home</router-link></p>
+            <p><router-link to="" class="footer-link">About</router-link></p>
+            <p><router-link to="" class="footer-link">Services</router-link></p>
+            <p><router-link to="" class="footer-link">Projects</router-link></p>
+            <p><router-link to="" class="footer-link">Trainings</router-link></p>
+            <p><router-link to="" class="footer-link">Blog</router-link></p>
+          </div>
+        </div>
       </div>
-      <div class="contact">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, labore!
-        </p>
+      <div class="trademark">
+        <p>&copy; 2023 Meln Hub. All right reserved</p>
+        <div class="com-social-icons">
+          <router-link to=""><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-facebook"/></router-link>
+          <router-link to=""><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-linkedin"/></router-link>
+          <router-link to=""><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-twitter"/></router-link>
+          <router-link to=""><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-instagram"/></router-link>
+          <router-link to=""><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-whatsapp"/></router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -44,50 +52,65 @@ export default {
 
 <style scoped>
 .footer {
-  color: rgb(1, 1, 29);
-  padding: 2rem 0;
-  height: 50vh;
-  background: linear-gradient(
-    180deg,
-    rgba(244, 245, 249, 0.808),
-    rgba(95, 97, 107, 0.884)
-  );
+  background: url("../../assets/images/footer.png");
+  color:#fff;
+  font-weight: 100;
+  font-size: 0.8rem;
 }
 
 .footerContainer {
-  width: 80%;
-  margin: 2rem auto;
-  /* padding: 10px; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  justify-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0 0.2rem;
+}
+.footerContainer>div{
+  margin: 20px 0;
+}
+.company-info{
+  display: flex;
+  justify-content: space-between;
+}
+.links{
+  display: flex;
+  gap: 50px;
+}
+.links h4{
+  margin: 10px auto;
+  font-size: 0.8rem;
+}
+.links p{
+  margin: 5px auto;
+}
+.platforms p{
+  margin: 10px auto;
+  font-size: 0.8rem;
+}
+.trademark{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.social-media a,
-.links a {
-  margin: 5px;
-  padding: 5px;
-  text-decoration: none;
-  font-size: large;
-  font-weight: 600;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(1, 1, 36);
+.foot-social-icon{
+  margin:auto 10px;
+  font-size: 1rem;
 }
-.links li {
-  list-style: none;
-}
-.contact {
-  text-align: center;
+.footer-link{
+  color: #fff;
 }
 
-@media screen and (max-width: 500px) {
-  .footer {
-    padding: 10px;
+@media screen and (max-width: 1000px) {
+  .company-info{
+    flex-flow: column wrap;
   }
-  .footerContainer {
-    width: 100%;
-    grid-template-columns: 1fr;
+  .links{
+    gap:120px;
+  }
+  .platforms p{
+    font-size: 0.7rem;
+  }
+  .foot-social-icon{
+    margin:auto 5px;
+    font-size: 0.8rem;
   }
 }
 </style>
