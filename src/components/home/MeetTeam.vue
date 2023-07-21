@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-            <!-- <div class="member">
+            <div class="member">
                 <img class="member-pix" src="../../assets/images/CMO.png" alt="CMO image">
                 <h3 class="member-id">Ephraim Morgan</h3>
                 <p class="member-role">CMO</p>
@@ -86,7 +86,7 @@
                     <font-awesome-icon class="icon" icon="fa-brands fa-instagram"/>
                     <font-awesome-icon class="icon" icon="fa-brands fa-whatsapp"/>
                 </div>
-            </div> -->
+            </div>
 
             <div class="member">
                 <img class="member-pix" src="../../assets/images/CLO.png" alt="CLO image">
