@@ -162,7 +162,7 @@ export default {
   }
   .features>div{
     width: 100%;
-    padding: 25px;
+    padding: 15px;
   }
   .feat-item{
     flex-flow: column;
@@ -216,5 +216,10 @@ export default {
     font-size: 0.9rem;
   } 
   
+}
+@media screen and (max-width:400px) {
+  .hero{
+    height: 150vh;
+  }
 }
 </style>
