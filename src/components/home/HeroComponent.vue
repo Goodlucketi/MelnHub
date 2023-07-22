@@ -219,6 +219,12 @@ export default {
 }
 @media screen and (max-width:400px) {
   .hero{
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .hero{
     height: 150vh;
   }
 }
