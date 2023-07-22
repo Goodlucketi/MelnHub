@@ -113,4 +113,12 @@ export default {
     font-size: 0.8rem;
   }
 }
+@media screen and (max-width:500px){
+  .platforms p{
+    font-size: 0.65rem;
+  }
+  .foot-social-icon{
+    margin: auto 2px;
+  }
+}
 </style>
