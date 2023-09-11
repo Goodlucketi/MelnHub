@@ -88,7 +88,7 @@ nav {
   background: rgba(151, 71, 255, 0.3);
   backdrop-filter: blur(10px);
   padding: 20px;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;

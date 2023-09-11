@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import "./style.css";
 
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -27,6 +28,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faCircleChevronDown } from "@fortawesome/free-solid-svg-icons";
 /* add icons to the library */
 library.add(
   faCode,
@@ -45,7 +47,8 @@ library.add(
   faArrowRight,
   faEnvelope,
   faLocationDot,
-  faPhone
+  faPhone,
+  faCircleChevronDown
 );
 
 /* add font awesome icon component */

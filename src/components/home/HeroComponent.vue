@@ -63,6 +63,7 @@ export default {
   background-size: cover;
   height: 100vh;
   position: relative;
+  top: -100px;
 }
 .hero-content{
   position: relative;
