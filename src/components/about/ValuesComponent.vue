@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="values w-11/12 mx-auto">
-            <h2 class="text-center font-bold text-3xl p-8">Our Values</h2>
+            <h2 class="text-center font-bold text-3xl p-8 sm:text-2xl">Our Values</h2>
             <div class="values-container">
                 <div class="value bg-blue-900 px-4 py-2 rounded-lg flex justify-between text-white align-center my-3">
                     <p>Passion</p>

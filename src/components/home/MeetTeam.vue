@@ -60,39 +60,7 @@
                 <p class="member-role">CFO</p>
                 <div class="underline"></div>
                 <p class="member-description">
-                    Lorem Ipsum
-                </p>
-                <div class="member-social">
-                    <font-awesome-icon class="icon" icon="fa-brands fa-facebook"/>
-                    <font-awesome-icon class="icon" icon="fa-brands fa-linkedin"/>
-                    <font-awesome-icon class="icon" icon="fa-brands fa-twitter"/>
-                    <font-awesome-icon class="icon" icon="fa-brands fa-instagram"/>
-                    <font-awesome-icon class="icon" icon="fa-brands fa-whatsapp"/>
-                </div>
-            </div>
-
-            <div class="member">
-                <img class="member-pix" src="../../assets/images/CMO.png" alt="CMO image">
-                <h3 class="member-id">Ephraim Morgan</h3>
-                <p class="member-role">CMO</p>
-                <div class="underline"></div>
-                <p class="member-description">lorem Ipsum</p>
-                <div class="member-social">
-                    <font-awesome-icon class="icon" icon="fa-brands fa-facebook"/>
-                    <font-awesome-icon class="icon" icon="fa-brands fa-linkedin"/>
-                    <font-awesome-icon class="icon" icon="fa-brands fa-twitter"/>
-                    <font-awesome-icon class="icon" icon="fa-brands fa-instagram"/>
-                    <font-awesome-icon class="icon" icon="fa-brands fa-whatsapp"/>
-                </div>
-            </div>
-
-            <div class="member">
-                <img class="member-pix" src="../../assets/images/CLO.png" alt="CLO image">
-                <h3 class="member-id">Idorenyin Usoro</h3>
-                <p class="member-role">CLO</p>
-                <div class="underline"></div>
-                <p class="member-description">
-                    Front Desk Officer
+                    Financial Analyst
                 </p>
                 <div class="member-social">
                     <font-awesome-icon class="icon" icon="fa-brands fa-facebook"/>
@@ -134,7 +102,6 @@ export default {
     }
     .teams{
         display: flex;
-        flex-flow: wrap;
         gap: 50px;
         justify-content: center;
         align-items: center;
@@ -143,7 +110,7 @@ export default {
         background: #fff;
         padding: 10px;
         border-radius: 20px;
-        width: 30%;
+        width: 20%;
     }
     .member-pix{
         border-radius: 50%;

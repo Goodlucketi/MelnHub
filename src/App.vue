@@ -14,7 +14,7 @@
         <div :id="openNav " class="link" :style="{ height: nav }">
           <router-link class="nav-link home" to="/">Home</router-link>
           <router-link class="nav-link" to="/about">About</router-link>
-          <router-link class="nav-link" to="/services">Services</router-link>
+          <router-link class="nav-link" to="/service">Services</router-link>
           <router-link class="nav-link" to="/projects">Projects</router-link>
           <router-link class="nav-link" to="/training">Training</router-link>
           <router-link class="nav-link" to="/blog">Blog</router-link>
