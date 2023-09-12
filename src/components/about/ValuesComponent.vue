@@ -9,7 +9,7 @@
                         <font-awesome-icon icon="fa-solid fa-circle-chevron-down" />
                     </div>
                     <transition name="slide-fade">
-                        <div class="accordion-content shadow p-5 h-32" v-show="index === openIndex">
+                        <div class="accordion-content shadow p-5 h-auto" v-show="index === openIndex">
                             <p>
                                 {{ accord.content }}
                             </p>
