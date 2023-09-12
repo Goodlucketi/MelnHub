@@ -21,23 +21,23 @@
           </div>
           <div class="quick-links">
             <h4>QUICK LINKS</h4>
-            <p><router-link to="" class="footer-link">Home</router-link></p>
-            <p><router-link to="" class="footer-link">About</router-link></p>
-            <p><router-link to="" class="footer-link">Services</router-link></p>
-            <p><router-link to="" class="footer-link">Projects</router-link></p>
-            <p><router-link to="" class="footer-link">Trainings</router-link></p>
-            <p><router-link to="" class="footer-link">Blog</router-link></p>
+            <p><router-link to="/" class="footer-link">Home</router-link></p>
+            <p><router-link to="/about" class="footer-link">About</router-link></p>
+            <p><router-link to="/service" class="footer-link">Services</router-link></p>
+            <p><router-link to="/project" class="footer-link">Projects</router-link></p>
+            <p><router-link to="/training" class="footer-link">Trainings</router-link></p>
+            <p><router-link to="/blog" class="footer-link">Blog</router-link></p>
           </div>
         </div>
       </div>
       <div class="trademark">
         <p>&copy; 2023 Meln Hub. All right reserved</p>
         <div class="com-social-icons">
-          <router-link to=""><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-facebook"/></router-link>
-          <router-link to=""><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-linkedin"/></router-link>
-          <router-link to=""><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-twitter"/></router-link>
-          <router-link to=""><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-instagram"/></router-link>
-          <router-link to=""><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-whatsapp"/></router-link>
+          <a :href="facebook" :target="target"><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-facebook"/></a>
+          <a :href="linkedin" :target="target"><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-linkedin"/></a>
+          <a :href="twitter" :target="target"><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-twitter"/></a>
+          <a :href="instagram" :target="target"><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-instagram"/></a>
+          <a :href="whatsapp" :target="target"><font-awesome-icon class="foot-social-icon footer-link" icon="fa-brands fa-whatsapp"/></a>
         </div>
       </div>
     </div>
@@ -47,6 +47,15 @@
 <script>
 export default {
   name: "FooterComponent",
+  data() {
+    return {
+      facebook:"https://www.facebook.com/profile.php?id=100092200862993",
+      twitter: 'https://www.twitter.com/Melnhub',
+      linkedin: 'https://www.linkedin.com/in/meln-hub/',
+      instagram: 'https://www.instagram.com/melnhub',
+      target: '_blank',
+    }
+  },
 };
 </script>
 
