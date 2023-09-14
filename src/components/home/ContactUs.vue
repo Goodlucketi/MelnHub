@@ -8,18 +8,18 @@
             <h3 class="form-title">Get in Touch</h3>
             <p class="form-desc">Have an enquiry? Fill out the form to contact our team</p>
 
-            <form class="contact-form">
+            <form class="contact-form" @submit.prevent="onSubmit">
                 <div class="name">
                     <p>Full Name</p>
-                    <input type="text" name="fullname" id="fulname">
+                    <input type="text" name="fullname" id="fulname" v-model="formData.name" value="formData.name">
                 </div>
                 <div class="email">
                     <p>Email</p>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" v-model="formData.email" value="formData.name">
                 </div>
                 <div class="message">
                     <p>Message</p>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Message Here"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Message Here" v-model="formData.message" value="formData.name"></textarea>
                 </div>
                 <div class="submit">
                     <input type="submit" value="Send Message">
@@ -38,7 +38,21 @@
 
 <script>
 export default {
-    name: "ContactUs"
+    name: "ContactUs",
+    data() {
+        return {
+            formData: {
+                name: '',
+                email: '',
+                message: '',
+            } 
+        }
+    },
+    methods: {
+        onSubmit(){
+            console.log(this.formData);
+        }
+    },
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="register">
-    <div class="regContainer">
+    <div class="regContainer w-11/12 py-10 mx-auto">
       <h3>Register</h3>
       <div class="form">
         <form class="regForm">
@@ -16,28 +16,32 @@
             <font-awesome-icon class="icon" icon="fa-solid fa-phone" />
             <input type="text" name="phone" id="phone" placeholder="Phone:" />
           </div>
+
           <div>
-            <label for="gender">
-              <font-awesome-icon class="icon" icon="fa-solid fa-male" />
-              <input type="radio" name="gender" id="male" value="male" />
-            </label>
-            <label for="female">
-              <font-awesome-icon class="icon" icon="fa-solid fa-female" />
-              <input type="radio" name="gender" id="gender" value="female" />
-            </label>
+            <font-awesome-icon class="icon" icon="fa-solid fa-phone" />
+            <label for="gender" class="block">Gender</label>
+            <select name="gender" id="gender" class="block">
+              <option value="null">--Select--</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <div>
+            <font-awesome-icon class="icon" icon="fa-solid fa-phone" />
+            <label for="dob" class="block">Date of Birth</label>
+            <input type="date" name="dob" id="dob" placeholder="Date of Birth:" class="block" />
           </div>
           <div>
-            <font-awesome-icon class="icon" icon="fa-solid fa-book" />
-            <input type="text" name="name" id="name" />
+            <font-awesome-icon class="icon" icon="fa-solid fa-phone" />
+            <input type="text" name="address" id="address" placeholder="Address:" />
           </div>
+
           <div>
-            <font-awesome-icon class="icon" icon="fa-solid fa-user" />
-            <input type="text" name="name" id="name" />
+            <font-awesome-icon class="icon" icon="fa-solid fa-phone" />
+            <input type="text" name="course" id="course" placeholder="Course:" />
           </div>
-          <div>
-            <font-awesome-icon class="icon" icon="fa-solid fa-user" />
-            <input type="text" name="name" id="name" />
-          </div>
+          
         </form>
       </div>
     </div>
@@ -47,45 +51,14 @@
 <script>
 export default {
   name: "RegistrationForm",
-  data: () => ({}),
+  data() {
+    return {
+      
+    }
+  },
 };
 </script>
 
 <style scoped>
-.regContainer {
-  width: 80%;
-  margin: 4rem auto;
-  outline: 2px solid red;
-}
-.regContainer > h3 {
-  font-size: x-large;
-  text-align: center;
-  padding: 1rem;
-}
-.regForm {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
-  justify-content: space-between;
-  margin: 10px auto;
-  outline: 1px solid red;
-}
-.regForm input {
-  padding: 1rem;
-  width: 80%;
-  margin: auto auto;
-  border-radius: 10px;
-}
 
-@media screen and (max-width: 500px) {
-  .regForm {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-  }
-
-  .regContainer h3 {
-    color: #0c0c0c;
-    font-size: large;
-  }
-}
 </style>

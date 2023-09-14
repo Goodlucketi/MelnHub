@@ -1,22 +1,24 @@
 <template>
   <div class="training">
     <div class="trainingcontainer">
-      <TemporaryComponent />
+      <TrainingComponent />
       <FooterComponent />
     </div>
   </div>
 </template>
 
 <script>
-import TemporaryComponent from "@/components/TemporaryComponent.vue";
+import TrainingComponent from '@/components/training/TrainingComponent.vue';
 import FooterComponent from "@/components/home/FooterComponent.vue";
 export default {
   name: "TrainingView",
-  data: () => ({
-    title: "Trainings",
-  }),
+  data() {
+    return {
+      
+    }
+  },
   components: {
-    TemporaryComponent,
+    TrainingComponent,
     FooterComponent,
   },
 };

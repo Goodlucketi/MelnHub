@@ -6,6 +6,7 @@ import ServiceView from "../views/ServiceView.vue";
 import BlogView from "../views/BlogView.vue";
 import TrainingView from "@/views/TrainingView.vue";
 import ProjectView from "@/views/ProjectView.vue";
+import RegistrationView from "@/views/RegistrationView.vue";
 // import { component } from "vue/types/umd";
 
 Vue.use(VueRouter);
@@ -36,6 +37,11 @@ const routes = [
     path: "/projects",
     name: "projects",
     component: ProjectView,
+  },
+  {
+    path: "/registration",
+    name: "registration",
+    component: RegistrationView,
   },
   
   {

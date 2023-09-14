@@ -1,15 +1,15 @@
 <template>
   <div class="services">
-    <div class="serviceContainer">
-      <h3>{{ title }}</h3>
-      <div class="service-items">
+    <div class="serviceContainer py-10 w-11/12 mx-auto">
+      <h3 class="text-3xl mb-5 p-3 font-bold text-center">{{ heading }}</h3>
+      <div class="service-items grid grid-cols-3 gap-10 lg:grid-cols-1">
         <div class="service">
           <img src="../../assets/icons/Code.png" class="service-icon" alt="">
           <h3 class="service-title">Software Development</h3>
           <p class="service-content">
             We develop robust, scalable, and customized software solutions that align with your business objectives. From web and mobile applications to enterprise software, we have you covered.
           </p>
-          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/register" class="action"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
 
         <div class="service">
@@ -18,7 +18,7 @@
           <p class="service-content">
             Embrace the digital age with our transformative solutions. We help businesses streamline processes, enhance customer experiences, and unlock new growth opportunities through digitalization.
           </p>
-          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/register" class="action"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
 
         <div class="service">
@@ -27,7 +27,7 @@
           <p class="service-content">
             Our experienced consultants provide strategic guidance, technology assessments, and roadmap development to help you navigate the complex IT landscape and make informed technology decisions.
           </p>
-          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/register" class="action"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
 
         <div class="service">
@@ -36,7 +36,7 @@
           <p class="service-content">
             We develop robust, scalable, and customized software solutions that align with your business objectives. From web and mobile applications to enterprise software, we have you covered.
           </p>
-          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/register" class="action"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
 
         <div class="service">
@@ -45,7 +45,7 @@
           <p class="service-content">
             Embrace the digital age with our transformative solutions. We help businesses streamline processes, enhance customer experiences, and unlock new growth opportunities through digitalization.
           </p>
-          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/register" class="action"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
 
         <div class="service">
@@ -54,7 +54,7 @@
           <p class="service-content">
             Our experienced consultants provide strategic guidance, technology assessments, and roadmap development to help you navigate the complex IT landscape and make informed technology decisions.
           </p>
-          <router-link to="/register" class="action"><span>Explore</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/register" class="action"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
         
       </div>
@@ -66,11 +66,13 @@
 export default {
   name: "serviceComponent",
   data: () => ({
-    title: "Discover our Services",
+    
   }),
-  // props: {
-  //   head: Training,
-  // },
+  props: {
+      heading: String,
+      action: String,
+    }
+  
 };
 </script>
 
@@ -80,22 +82,7 @@ export default {
   background-position: 0 20rem;
   background-size: contain;
 }
-.serviceContainer {
-  width: 90%;
-  margin:auto auto;
-}
-.serviceContainer > h3 {
-  font-size: 2.5rem;
-  text-align: center;
-  padding: 1rem;
-  font-weight: 700;
-  margin:30px;
-}
-.service-items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3rem;
-}
+
 .service {
   box-shadow: 0 0px 30px 1px rgb(238, 234, 234), 0 0 30px 1px rgb(239, 232, 232);
   padding: 1rem;
@@ -142,10 +129,6 @@ export default {
   .serviceContainer> h3 {
     font-size: 2rem;
   }
-  .service-items {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-  }
 
   .service-title {
     color: #0c0c0c;
@@ -162,10 +145,6 @@ export default {
 @media screen and (max-width: 500px) {
   .serviceContainer > h3 {
     font-size: 1.2rem;
-  }
-  .service-items {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
   }
 
   .service-title {

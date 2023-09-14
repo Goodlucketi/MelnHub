@@ -10,7 +10,6 @@
   
   <script>
   import TemporaryComponent from "@/components/TemporaryComponent.vue";
-
   import FooterComponent from "@/components/home/FooterComponent.vue";
   export default {
     name: "ProjectView",

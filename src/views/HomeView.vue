@@ -2,12 +2,12 @@
   <div class="home">
     <HeroComponent />
     <AboutHome />
-    <serviceComponent />
+    <serviceComponent :heading="head" :action="link" />
     <AdComponent />
     <MeetTeam />
     <Blog />
     <ContactForm />
-    <Footer />
+    <FooterComponent />
   </div>
 </template>
 
@@ -20,10 +20,16 @@ import AdComponent from "@/components/home/AdComponent.vue"
 import MeetTeam from "@/components/home/MeetTeam.vue"
 import Blog from "@/components/home/BlogComponent.vue"
 import ContactForm from "@/components/home/ContactUs.vue"
-import Footer from '@/components/home/FooterComponent.vue';
+import FooterComponent from '@/components/home/FooterComponent.vue';
 
 export default {
   name: "HomeView",
+  data() {
+    return {
+      head:"Discover Our Services",
+      link: 'Explore'
+    }
+  },
   components: {
     HeroComponent,
     AboutHome,
@@ -32,8 +38,7 @@ export default {
     MeetTeam,
     Blog,
     ContactForm,
-    Footer
-    
+    FooterComponent
   },
 };
 </script>
