@@ -11,7 +11,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDays, faCode } from "@fortawesome/free-solid-svg-icons";
 import { faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 import { faLineChart } from "@fortawesome/free-solid-svg-icons";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
@@ -29,6 +29,10 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faCircleChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faPersonHalfDress } from "@fortawesome/free-solid-svg-icons";
+// import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 /* add icons to the library */
 library.add(
   faCode,
@@ -48,7 +52,11 @@ library.add(
   faEnvelope,
   faLocationDot,
   faPhone,
-  faCircleChevronDown
+  faCircleChevronDown,
+  faBook,
+  faUser,
+  faPersonHalfDress,
+  faCalendarDays
 );
 
 /* add font awesome icon component */

@@ -11,15 +11,15 @@
             <form class="contact-form" @submit.prevent="onSubmit">
                 <div class="name">
                     <p>Full Name</p>
-                    <input type="text" name="fullname" id="fulname" v-model="formData.name" value="formData.name">
+                    <input type="text" name="fullname" id="fulname" v-model="formData.name" value="formData.name" required>
                 </div>
                 <div class="email">
                     <p>Email</p>
-                    <input type="email" name="email" id="email" v-model="formData.email" value="formData.name">
+                    <input type="email" name="email" id="email" v-model="formData.email" value="formData.name" required>
                 </div>
                 <div class="message">
                     <p>Message</p>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Message Here" v-model="formData.message" value="formData.name"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Message Here" v-model="formData.message" value="formData.name" required></textarea>
                 </div>
                 <div class="submit">
                     <input type="submit" value="Send Message">
@@ -51,6 +51,7 @@ export default {
     methods: {
         onSubmit(){
             console.log(this.formData);
+            alert("Your request has been submitted!!!")
         }
     },
 }
