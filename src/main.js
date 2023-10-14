@@ -4,6 +4,14 @@ import router from "./router";
 import store from "./store";
 import "./style.css";
 
+// Vuetify
+// import Vuetify from 'vuetify';
+// import 'vuetify/dist/vuetify.min.css';
+
+// Vue.use(Vuetify);
+// const vuetify = new Vuetify();
+
+
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";
 
@@ -70,5 +78,6 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
+  // vuetify,
   render: (h) => h(App),
 }).$mount("#app");

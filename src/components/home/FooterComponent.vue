@@ -54,6 +54,7 @@ export default {
       linkedin: 'https://www.linkedin.com/in/meln-hub/',
       instagram: 'https://www.instagram.com/melnhub',
       target: '_blank',
+      whatsapp: 'https://chat.whatsapp.com/Ke8EcoUXVSB3LzsEfh4D8r',
     }
   },
 };

@@ -2,7 +2,7 @@
   <div class="training">
     <div class="training-container w-11/12 mx-auto py-10">
       <h2 class="text-3xl text-center p-2">Our Training</h2>
-      <div class="courses grid grid-cols-3 justify-center gap-10 align-center sm:grid-cols-1">
+      <div class="courses grid grid-cols-3 justify-center gap-10 align-center lg:grid-cols-2 sm:grid-cols-1">
         <div class="course rounded-lg flex flex-col shadow-lg px-10 py-5 text-center">
           <img src="../../assets/icons/Code.png" alt="Software Development" class="w-2/6 p-5 mx-auto">
           <h3 class="text-2xl p-2 mb-2" :courses="courses.SoftwareDevelopment">{{courses.SoftwareDevelopment }}</h3>
